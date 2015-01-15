@@ -1,10 +1,14 @@
 $("document").ready(function() {
     $(".k").css("color", "cyan");
     $(".k").css("text-align", "center");
-    $('p:first').css("color", "black");
+    $('p:first').css("color", "white");
     $("p:last").css("color", "blue");
-    $('body').css("background-image", "url(http://1.media.dorkly.cvcdn.com/55/71/c988305d1cae5e1f56b2178a1c43b74d.gif)");
-    $("body").css("background-size", "cover");
+    $('body').css("background-image", "url(http://images2.alphacoders.com/246/246522.jpg)");
+    $("body").css("background-size","cover");
+    $('#replaceWHtml').bind('click', replaceWHtml);
+    $("#replaceWText").bind("click", replaceWText);
+    $("#MEXICO").bind("click", changeMexico);
+    
     $("h1").bind("mouseover", mouseOverMe);
     $("h1").bind("mouseout", mouseOutMe);
 });
@@ -13,7 +17,16 @@ function mouseOverMe() {
     $("h1").css("color", "red");
 }
 function mouseOutMe(){
-    
+    $("h1").css("color","cyan");
+}
+function replaceWHtml(){
+  $('#ptag').html('<h6>HI<h6>');
+}
+function replaceWText(){
+  $("#change").text("<h6>HI<h6>");   
+}
+function changeMexico(){
+  $("MEXICO").css("background-image","url(http://fc09.deviantart.net/fs70/f/2011/254/7/3/wallpaper_debian_mexico_by_hacktotopo-d49ijrt.png)");  
 }
 
 
