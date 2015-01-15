@@ -8,9 +8,12 @@ $("document").ready(function() {
     $('#replaceWHtml').bind('click', replaceWHtml);
     $("#replaceWText").bind("click", replaceWText);
     $("#MEXICO").bind("click", changeMexico);
+    $("#superHumans").accordion({header: "h3"});
+    $("#superHumans").css("opacity", "0.7");
     
     $("h1").bind("mouseover", mouseOverMe);
     $("h1").bind("mouseout", mouseOutMe);
+    $("MEXICO").css("background-image","url(http://fc09.deviantart.net/fs70/f/2011/254/7/3/wallpaper_debian_mexico_by_hacktotopo-d49ijrt.png)");  
 });
 
 function mouseOverMe() {
